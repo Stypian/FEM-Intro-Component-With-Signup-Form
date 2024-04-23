@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <script src="scripts.js"></script>
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+  <main class="intro-comp">
+    <div class="intro-comp__cont">
+      <div class="intro-comp__half">
+        <div class="intro-comp__inner">
+          <h1 class="intro-comp__h1">Learn to code by watching others</h1>
+          <p class="intro-comp__p">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+        </div>
+      </div>
+      <div class="intro-comp__half intro-comp__half--right">
+        <div class="intro-comp__inner">
+          <div class="intro-comp__form-heading">
+            <p class="intro-comp__p intro-comp__p--form"><span class="intro-comp__p intro-comp__p--span">Try it free for 7 days</span> then $20/mo. thereafter</p>
+          </div>
+          <form class="intro-comp__sign-up">
+            <div class="intro-comp__input-wrap">
+              <input type="text" class="intro-comp__input" placeholder="First Name">
+              <img src="images/icon-error.svg" class="intro-comp__error-icon" alt="error">
+            </div>
+            <div class="intro-comp__error-cont ">
+              <p class="intro-comp__error-text">First name cannot be empty</p>
+            </div>
+            <div class="intro-comp__input-wrap">
+              <input type="text" class="intro-comp__input" placeholder="Last Name">
+              <img src="images/icon-error.svg" class="intro-comp__error-icon" alt="error">
+            </div>
+            <div class="intro-comp__error-cont">
+              <p class="intro-comp__error-text">Last name cannot be empty</p>
+            </div>
+            <div class="intro-comp__input-wrap">
+              <input type="email" class="intro-comp__input" placeholder="Email Address">
+              <img src="images/icon-error.svg" class="intro-comp__error-icon" alt="error">
+            </div>
+            <div class="intro-comp__error-cont">
+              <p class="intro-comp__error-text">Looks like this is not an email</p>
+            </div>
+            <div class="intro-comp__input-wrap">
+              <input type="password" class="intro-comp__input" placeholder="Password">
+              <img src="images/icon-error.svg" class="intro-comp__error-icon" alt="error">
+            </div>
+            <div class="intro-comp__error-cont">
+              <p class="intro-comp__error-text">Password cannot be empty</p>
+            </div>
+            <button class="intro-comp__submit">CLAIM YOUR FREE TRIAL</button>
+            <p class="intro-comp__terms">By clicking the button, you are agreeing to our <span class="intro-comp__terms intro-comp__terms--span"><a href="#" class="intro-comp__terms intro-comp__terms--span">Terms and Services</a></span></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Ron L</a>.
+    </p>
+  </footer>
+</body>
+</html>

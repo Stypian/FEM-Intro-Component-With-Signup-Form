@@ -1,0 +1,362 @@
+body {
+    margin: 0;
+}
+* {
+    font-size: 10px;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLmg1hVF9eO.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v21/pxiDyp8kv8JHgFVrJJLmr19VF9eO.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+.attribution {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.intro-comp {
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.intro-comp__cont {
+    width: 140rem;
+    height: 76%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-comp__half {
+    width: 50%;
+    height: 100%;
+    font-family: 'Poppins';
+    color: rgba(255,255,255,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.intro-comp__half--right {
+    align-items: flex-start;
+}
+
+.intro-comp__inner {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+}
+
+.intro-comp__p {
+    font-size: 1.6rem;
+    width: 90%;
+}
+
+.intro-comp__p--form {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.intro-comp__p--span {
+    font-weight: 600;
+}
+
+.intro-comp__h1 {
+    font-size: 4.8rem;
+    line-height: 1.1;
+    margin-bottom: 1.6rem;
+}
+
+.intro-comp__form-heading {
+    width: 100%;
+    padding-block: .5rem;
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 8px 2px 0px rgba(0,0,0,0.2);
+}
+
+.intro-comp__sign-up {
+    width: 100%;
+    padding-bottom: 3.2rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    gap: 2rem;
+    box-shadow: 0px 8px 2px 0px rgba(0,0,0,0.2);
+}
+
+.intro-comp__input-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.intro-comp__input {
+    width: 85%;
+    border: solid rgba(0,0,0,0.2) 1px;
+    border-radius: 5px;
+    padding-block: 2rem;
+    padding-left: 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.intro-comp__submit {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: inherit;
+    background-color: hsl(154, 59%, 51%);
+    cursor: pointer;
+    box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.3);
+}
+
+.intro-comp__submit:active {
+    background-color: hsl(154, 90%, 68%);
+}
+
+.intro-comp__terms {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: hsl(246, 25%, 77%);
+    margin-top: -.8rem;
+}
+
+.intro-comp__terms--span {
+    color:hsl(0, 100%, 74%);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.intro-comp__input:focus {
+    border: solid rgba(0,0,0,0.8) 1px;
+}
+
+.intro-comp__error-cont {
+    color: hsl(0, 100%, 74%);
+    margin-top: -1.4rem;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: 85%;
+    font-style: italic;
+}
+
+.intro-comp__error-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.intro-comp__error-icon {
+    position: absolute;
+    right: 20%;
+    display: none;
+}
+
+.intro-comp__show-error {
+    display: flex;
+}
+
+.intro-comp__no-error {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .intro-comp__cont {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1200px) {
+    .intro-comp__inner {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .intro-comp__cont {
+        flex-direction: column;
+    }
+
+    .intro-comp__h1 {
+        width: 90%;
+    }
+
+    .intro-comp__p {
+       margin-bottom: 3rem;
+    }
+
+    .intro-comp {
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 6rem;
+    }
+
+    .intro-comp__half {
+        align-items: center;
+        width: 92%;
+    }
+
+    .intro-comp__inner {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .intro-comp__inner {
+        width: 92%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .intro-comp__h1 {
+        font-size: 4.2rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .intro-comp__half {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro-comp__h1 {
+        font-size: 4rem;
+        width: 80%;
+    }
+
+    .intro-comp__p {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    .intro-comp__half {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .intro-comp__h1 {
+        font-size: 3.2rem;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .intro-comp__terms {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro-comp__form-heading {
+        padding-block: 0;
+    }
+
+    .intro-comp__p--form {
+        width: 70% !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .intro-comp__h1 {
+        font-size: 2.8rem;
+    }
+
+    .intro-comp {
+        padding-top: 6rem;
+    }
+
+    .intro-comp__p {
+        width: 84%;
+    }
+}
+
