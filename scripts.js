@@ -5,7 +5,7 @@ onload = function() {
     const errorIcon = document.querySelectorAll(".intro-comp__error-icon");
     const form = document.querySelector(".intro-comp__sign-up");
     const errorArray = [...errorCont];
-    const validEmail = /^([a-zA-Z0-9\.\-\\_\]+)@([a-zA-Z0-9-]+).([a-z]{2,3})$/;
+    const validEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
     const addErrors = (a) => {
         errorCont[a].classList.remove("intro-comp__no-error");
